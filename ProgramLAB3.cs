@@ -27,6 +27,10 @@ namespace lab3
         {
             return new Vector(v1.x * scalar, v1.y * scalar, v1.z * scalar);
         }
+        public static Vector operator *(int scalarVector v1)
+        {
+            return new Vector(v1.x * scalar, v1.y * scalar, v1.z * scalar);
+        }
         public static bool operator ==(Vector v1, Vector v2)
         {
             double len1 = Math.Sqrt(v1.x * v1.x + v1.y * v1.y + v1.z * v1.z);
